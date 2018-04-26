@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 8]>      <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Partycalc</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <link href="//fonts.googleapis.com/css?family=PT+Serif+Caption&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/partycalc.css" media="all">
+
+    <script type="text/javascript" src="js/partycalc.js"></script>
+</head>
+
+<body>
+
+    <div class="panel panel-default p-2">
+        <div class="panel-heading"><strong>Калькулятор для вечеринок</strong> Участники вечеринки и еда. Заполните участников, продукты и цены. Отметьте галочками кто что ел/пил</div>
+        <div class="panel-body">
+            <table id="party">
+                <thead>
+                <tr>
+                    <td>Имя \ Продукт</td>
+                    <td class="product"><input type="text" class="form-control" value="Пиво">
+                        <input type="text" class="form-control" value="900">
+                    </td>
+                    <td class="product"><input type="text" class="form-control" value="Пицца">
+                        <input type="text" class="form-control" value="1200">
+                        <button type="button" class="remove-product btn btn-danger">х</button>
+                    </td>
+                    <td>Вкусил на сумму</td>
+                    <td>Купил на сумму</td>
+                    <td>Должен</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="text" class="form-control" value="Рус"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td><span></span></td>
+                    <td><input type="text" class="form-control" value="450"></td>
+                    <td><span></span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control" value="Митри"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td><span></span></td>
+                    <td><input type="text" class="form-control" value="450"></td>
+                    <td><span></span></td>
+                    <td>
+                        <button type="button" class="remove-user btn btn-danger">х</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control" value="Лена"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td class="check"><input type="checkbox"></td>
+                    <td><span></span></td>
+                    <td><input type="text" class="form-control" value="1200"></td>
+                    <td><span></span></td>
+                    <td>
+                        <button type="button" class="remove-user btn btn-danger">х</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer mt-2">
+            <button id="add_user_btn" type="button" class="btn btn-primary">Добавить участника</button>
+            <button id="add_product_btn" type="button" class="btn btn-success">Добавить продукт</button>
+            <!--<button id="clear_btn" type="button" class="btn btn-warning">Очистить все</button>-->
+            <button id="calc_btn" type="button" class="btn btn-danger">Посчитать</button>
+        </div>
+    </div>
+    <div id="result" class="panel panel-default px-2 pb-2">
+        <div class="panel-heading">Советы по расчетам между участниками вечеринки</div>
+        <div class="panel-body"></div>
+    </div>
+
+</body>
+</html>

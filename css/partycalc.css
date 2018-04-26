@@ -1,0 +1,25 @@
+body {
+    background: none;
+}
+
+#result {
+    display: none;
+}
+
+.form-control {
+    width: 120px;
+}
+
+#party td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.product .form-control {
+    width: 100px;
+    display: inline;
+}
+
+td.check {
+    text-align: center;
+}
